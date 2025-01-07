@@ -1,10 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balatro - El Roguelike de Poker</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+<header>
+    <h1>Balatro</h1>
+    <p>El revolucionario roguelike de poker</p>
+</header>
 
+<main class="contenedor-principal">
+    <section id="banner-destacado">
+        <h2>¡Descubre una nueva forma de jugar al poker!</h2>
+        <img src="balatro.webp" alt="Captura de pantalla de Balatro mostrando una partida con cartas y modificadores">
+    </section>
+
+    <section class="seccion-juego">
+        <h2>Sobre el juego</h2>
+        <p>Balatro es un innovador juego que combina elementos de roguelike con mecánicas de poker tradicional. Cada partida es única, permitiéndote construir mazos personalizados y descubrir sinergias increíbles entre las cartas.</p>
+    </section>
+
+    <section class="seccion-juego">
+        <h3>Características principales</h3>
+        <div class="carta">
+            <h4>Mecánicas Únicas</h4>
+            <p>Combina las reglas tradicionales del poker con elementos roguelike para crear una experiencia de juego única y adictiva.</p>
+        </div>
+        <div class="carta">
+            <h4>Progresión Constante</h4>
+            <p>Desbloquea nuevas cartas, mejoras y modificadores mientras avanzas en tus partidas.</p>
+        </div>
+    </section>
+
+    <button onclick="document.getElementById('dialogoCuriosidades').showModal()">Ver curiosidades</button>
+
+    <dialog id="dialogoCuriosidades">
+        <h3>Curiosidades sobre Balatro</h3>
+        <p>¿Sabías que el nombre "Balatro" proviene del latín y significa "bufón" o "bromista"?</p>
+        <p>El juego fue desarrollado por LocalThunk y publicado por Playstack.</p>
+        <button onclick="document.getElementById('dialogoCuriosidades').close()">Cerrar</button>
+    </dialog>
+</main>
+
+<footer>
+    <p>© 2024 Balatro - Todos los derechos reservados</p>
+</footer>
 </body>
 </html>
